@@ -1,10 +1,11 @@
 {
-  "name": "html2pdfmake",
+  "name": "h2pm",
   "version": "0.0.1",
-  "description": "",
+  "description": "Experimental html to pdfmake converter",
   "main": "dist/html2pdfmake.js",
   "scripts": {
     "build:prod": "rollup --config rollup.config.js",
+    "prepare": "npm run build:prod",
     "test": "npm run build:prod && node test/index.js"
   },
   "keywords": [],
