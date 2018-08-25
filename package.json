@@ -1,6 +1,6 @@
 {
   "name": "h2pm",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Experimental html to pdfmake converter",
   "main": "dist/h2pm.js",
   "scripts": {
