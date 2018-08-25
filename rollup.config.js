@@ -1,7 +1,5 @@
-// rollup.config.js
 import babel from 'rollup-plugin-babel'
-// import { uglify } from 'rollup-plugin-uglify'
-import { terser } from "rollup-plugin-terser";
+// import { terser } from "rollup-plugin-terser";
 import nodeResolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 
@@ -9,9 +7,9 @@ import commonjs from 'rollup-plugin-commonjs'
 export default {
   input: 'src/main.js',
   output: {
-    file: 'dist/html2pdfmake.js',
     format: 'umd',
-    name: 'html2pdfmake'
+    file: 'dist/h2pm.js',
+    name: 'h2pm',
   },
   plugins: [
     babel(),
@@ -20,7 +18,7 @@ export default {
       main: true
     }),
     commonjs(),
-    terser()
+    // terser()
   ],
   external: ['lodash', 'jsdom', 'jquery']
 };
